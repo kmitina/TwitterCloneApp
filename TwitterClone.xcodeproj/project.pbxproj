@@ -17,6 +17,7 @@
 		F072B0DC275672420015C152 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0DB275672420015C152 /* FeedController.swift */; };
 		F072B0DE2756725D0015C152 /* NotificationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0DD2756725D0015C152 /* NotificationsController.swift */; };
 		F072B0E0275672730015C152 /* ConversationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0DF275672730015C152 /* ConversationsController.swift */; };
+		F072B0E22757D5890015C152 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0E12757D5890015C152 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F072B0DB275672420015C152 /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		F072B0DD2756725D0015C152 /* NotificationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsController.swift; sourceTree = "<group>"; };
 		F072B0DF275672730015C152 /* ConversationsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsController.swift; sourceTree = "<group>"; };
+		F072B0E12757D5890015C152 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		F072B0D3275652F00015C152 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F072B0E12757D5890015C152 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				F072B0DE2756725D0015C152 /* NotificationsController.swift in Sources */,
 				F072B0E0275672730015C152 /* ConversationsController.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
+				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
 				F072B0DA275672210015C152 /* ExploreController.swift in Sources */,
 				F072B0DC275672420015C152 /* FeedController.swift in Sources */,
 				F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */,
