@@ -71,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F072B0D12756529E0015C152 /* Model */,
-				F072B0CF2756528A0015C152 /* View */,
+				F072B0E8275A36B70015C152 /* View */,
 				F072B0CE275652880015C152 /* ViewModel */,
 				F072B0CD275652720015C152 /* Controller */,
 				F072B0D2275652E10015C152 /* API */,
@@ -106,14 +106,6 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F072B0CF2756528A0015C152 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = View;
-			path = "New Group1/View";
-			sourceTree = "<group>";
-		};
 		F072B0D12756529E0015C152 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +135,13 @@
 				F072B0E62757ED860015C152 /* RegistrationController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F072B0E8275A36B70015C152 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
