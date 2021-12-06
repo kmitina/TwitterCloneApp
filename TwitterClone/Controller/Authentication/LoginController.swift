@@ -68,13 +68,17 @@ class LoginController: UIViewController {
     
     // MARK: - Selectors
     
-    @objc func handleLogin() {
-        print("Handle login")
-    }
     
     @objc func handleShowSignUp() {
-        print("Show sign up...")
+        let controller = RegistrationController()
+        navigationController?.pushViewController(controller, animated: true)
     }
+    
+    @objc func handleLogin() {
+        print("Show sign up...")
+
+    }
+
     
     // MARK: - Helpers
     
