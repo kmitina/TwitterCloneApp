@@ -20,6 +20,7 @@
 		F072B0E22757D5890015C152 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0E12757D5890015C152 /* Extensions.swift */; };
 		F072B0E52757ED2C0015C152 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0E42757ED2B0015C152 /* LoginController.swift */; };
 		F072B0E72757ED860015C152 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0E62757ED860015C152 /* RegistrationController.swift */; };
+		F072B0EA275A66490015C152 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0E9275A66490015C152 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F072B0E12757D5890015C152 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F072B0E42757ED2B0015C152 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F072B0E62757ED860015C152 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		F072B0E9275A66490015C152 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				F072B0E12757D5890015C152 /* Extensions.swift */,
+				F072B0E9275A66490015C152 /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			files = (
 				F072B0DE2756725D0015C152 /* NotificationsController.swift in Sources */,
 				F072B0E0275672730015C152 /* ConversationsController.swift in Sources */,
+				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
 				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
 				F072B0E52757ED2C0015C152 /* LoginController.swift in Sources */,
