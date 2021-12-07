@@ -26,6 +26,7 @@
 		F072B0F1275EBAD10015C152 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F072B0F0275EBAD10015C152 /* FirebaseAuth */; };
 		F072B0F3275EBAD10015C152 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = F072B0F2275EBAD10015C152 /* FirebaseAuthCombine-Community */; };
 		F072B0F5275EBAD10015C152 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F072B0F4275EBAD10015C152 /* FirebaseDatabase */; };
+		F072B0F7275F89C50015C152 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0F6275F89C50015C152 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F072B0E62757ED860015C152 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		F072B0E9275A66490015C152 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		F072B0EB275EB7F50015C152 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F072B0F6275F89C50015C152 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				F072B0E12757D5890015C152 /* Extensions.swift */,
 				F072B0E9275A66490015C152 /* Utilities.swift */,
+				F072B0F6275F89C50015C152 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
 				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
 				F072B0E52757ED2C0015C152 /* LoginController.swift in Sources */,
+				F072B0F7275F89C50015C152 /* Constants.swift in Sources */,
 				F072B0DA275672210015C152 /* ExploreController.swift in Sources */,
 				F072B0DC275672420015C152 /* FeedController.swift in Sources */,
 				F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */,

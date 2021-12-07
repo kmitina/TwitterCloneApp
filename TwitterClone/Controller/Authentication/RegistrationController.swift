@@ -23,7 +23,7 @@ class RegistrationController: UIViewController {
         button.addTarget(self, action: #selector(handleAddProfilePhoto), for: .touchUpInside)
         return button
     }()
-   
+    
     private lazy var emailContainerView: UIView = {
         let image = #imageLiteral(resourceName: "ic_mail_outline_white_2x-1")
         let view = Utilities().inputContainer(withImage: image, textfield: emailTextField)
@@ -104,27 +104,42 @@ class RegistrationController: UIViewController {
     }
     
     @objc func handleRegistration() {
-        guard let email = emailTextField.text else { return }
-        guard let password = passwordTextField.text else { return }
-        guard let fullname = fullnameTextField.text else { return }
-        guard let username = usernameTextField.text else { return }
         guard let profileImage = profileImage else {
             print("DEBUG: Please select a profile image..")
             return
         }
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        guard let fullname = fullnameTextField.text else { return }
+        guard let username = usernameTextField.text else { return }
         
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if let error = error {
-                print("DEBUG: Error is \(error.localizedDescription)")
-                return
-            }
-            guard let uid = result?.user.uid else { return }
-            
-            let values = ["email": email, "username": username, "fullname": fullname]
-            let ref = Database.database().reference().child("users").child(uid)
-            
-            ref.updateChildValues(values) { error, ref in
-                print("DEBUG: Successfully updated user information..")
+        guard let imageData = profileImage.jpegData(compressionQuality: 0.3) else { return }
+        let filename = NSUUID().uuidString
+        let storageRef = STORAGE_PROFILE_IMAGES.child(filename)
+        
+        
+        storageRef.putData(imageData, metadata: nil) { meta, error in
+            storageRef.downloadURL { url, error in
+                guard let profileImageUrl = url?.absoluteString else { return }
+                
+                Auth.auth().createUser(withEmail: email, password: password) { result, error in
+
+                    if let error = error {
+                        print("DEBUG: Error is \(error.localizedDescription)")
+                        return
+                    }
+                    
+                    guard let uid = result?.user.uid else { return }
+                    
+                    let values = ["email": email,
+                                  "username": username,
+                                  "fullname": fullname,
+                                  "profileImageUrl": profileImageUrl]
+                    
+                    REF_USERS.child(uid).updateChildValues(values) { error, ref in
+                        print("DEBUG: Successfully updated user information..")
+                    }
+                }
             }
         }
     }
@@ -156,9 +171,9 @@ class RegistrationController: UIViewController {
         stack.anchor(top: plusPhotoButton.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 32, paddingLeft: 32, paddingRight: 32)
         view.addSubview(alredyHaveAccountButton)
         alredyHaveAccountButton.anchor(left: view.leftAnchor,
-                                     bottom: view.safeAreaLayoutGuide.bottomAnchor,
-                                     right: view.rightAnchor, paddingLeft: 40,
-                                     paddingRight: 40)
+                                       bottom: view.safeAreaLayoutGuide.bottomAnchor,
+                                       right: view.rightAnchor, paddingLeft: 40,
+                                       paddingRight: 40)
     }
     
 }
