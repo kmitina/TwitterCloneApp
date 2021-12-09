@@ -28,6 +28,7 @@
 		F072B0F5275EBAD10015C152 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = F072B0F4275EBAD10015C152 /* FirebaseDatabase */; };
 		F072B0F7275F89C50015C152 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0F6275F89C50015C152 /* Constants.swift */; };
 		F072B0F9275FAA620015C152 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0F8275FAA620015C152 /* AuthService.swift */; };
+		F09C2AB627621C510007FC58 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB527621C510007FC58 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		F072B0EB275EB7F50015C152 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F072B0F6275F89C50015C152 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F072B0F8275FAA620015C152 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		F09C2AB527621C510007FC58 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				F072B0F8275FAA620015C152 /* AuthService.swift */,
+				F09C2AB527621C510007FC58 /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09C2AB627621C510007FC58 /* UserService.swift in Sources */,
 				F072B0DE2756725D0015C152 /* NotificationsController.swift in Sources */,
 				F072B0E0275672730015C152 /* ConversationsController.swift in Sources */,
 				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
