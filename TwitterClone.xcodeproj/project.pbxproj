@@ -31,6 +31,7 @@
 		F09C2AB627621C510007FC58 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB527621C510007FC58 /* UserService.swift */; };
 		F09C2AB8276222490007FC58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB7276222490007FC58 /* User.swift */; };
 		F09C2ABB27624DBE0007FC58 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F09C2ABA27624DBE0007FC58 /* SDWebImage */; };
+		F09C2ABD2762B12B0007FC58 /* UploadTwitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2ABC2762B12B0007FC58 /* UploadTwitController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		F072B0F8275FAA620015C152 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F09C2AB527621C510007FC58 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		F09C2AB7276222490007FC58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F09C2ABC2762B12B0007FC58 /* UploadTwitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTwitController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				F072B0D9275672210015C152 /* ExploreController.swift */,
 				F072B0DD2756725D0015C152 /* NotificationsController.swift */,
 				F072B0DF275672730015C152 /* ConversationsController.swift */,
+				F09C2ABC2762B12B0007FC58 /* UploadTwitController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
 				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
+				F09C2ABD2762B12B0007FC58 /* UploadTwitController.swift in Sources */,
 				F072B0E52757ED2C0015C152 /* LoginController.swift in Sources */,
 				F072B0F9275FAA620015C152 /* AuthService.swift in Sources */,
 				F09C2AB8276222490007FC58 /* User.swift in Sources */,
