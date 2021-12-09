@@ -29,6 +29,7 @@
 		F072B0F7275F89C50015C152 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0F6275F89C50015C152 /* Constants.swift */; };
 		F072B0F9275FAA620015C152 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0F8275FAA620015C152 /* AuthService.swift */; };
 		F09C2AB627621C510007FC58 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB527621C510007FC58 /* UserService.swift */; };
+		F09C2AB8276222490007FC58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB7276222490007FC58 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		F072B0F6275F89C50015C152 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F072B0F8275FAA620015C152 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		F09C2AB527621C510007FC58 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		F09C2AB7276222490007FC58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		F072B0D12756529E0015C152 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F09C2AB7276222490007FC58 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
 				F072B0E52757ED2C0015C152 /* LoginController.swift in Sources */,
 				F072B0F9275FAA620015C152 /* AuthService.swift in Sources */,
+				F09C2AB8276222490007FC58 /* User.swift in Sources */,
 				F072B0F7275F89C50015C152 /* Constants.swift in Sources */,
 				F072B0DA275672210015C152 /* ExploreController.swift in Sources */,
 				F072B0DC275672420015C152 /* FeedController.swift in Sources */,
