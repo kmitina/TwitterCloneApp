@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F05E50E227676A8C0078A1F1 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */; };
 		F072B0BA275652030015C152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0B9275652030015C152 /* AppDelegate.swift */; };
 		F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0BB275652030015C152 /* SceneDelegate.swift */; };
 		F072B0C1275652030015C152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F072B0BF275652030015C152 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
 		F072B0B6275652030015C152 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F072B0B9275652030015C152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F072B0BB275652030015C152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		F072B0E8275A36B70015C152 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				F09C2AB627621C510007FC58 /* UserService.swift in Sources */,
 				F072B0DE2756725D0015C152 /* NotificationsController.swift in Sources */,
+				F05E50E227676A8C0078A1F1 /* CaptionTextView.swift in Sources */,
 				F072B0E0275672730015C152 /* ConversationsController.swift in Sources */,
 				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
