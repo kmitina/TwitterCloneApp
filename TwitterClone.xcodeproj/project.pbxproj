@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F05E50E227676A8C0078A1F1 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */; };
+		F05E50E4276772CC0078A1F1 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E3276772CC0078A1F1 /* TweetService.swift */; };
 		F072B0BA275652030015C152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0B9275652030015C152 /* AppDelegate.swift */; };
 		F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F072B0BB275652030015C152 /* SceneDelegate.swift */; };
 		F072B0C1275652030015C152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F072B0BF275652030015C152 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
+		F05E50E3276772CC0078A1F1 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		F072B0B6275652030015C152 /* TwitterClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F072B0B9275652030015C152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F072B0BB275652030015C152 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				F072B0F8275FAA620015C152 /* AuthService.swift */,
 				F09C2AB527621C510007FC58 /* UserService.swift */,
+				F05E50E3276772CC0078A1F1 /* TweetService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */,
 				F072B0E72757ED860015C152 /* RegistrationController.swift in Sources */,
 				F072B0D5275653F60015C152 /* MainTabController.swift in Sources */,
+				F05E50E4276772CC0078A1F1 /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
