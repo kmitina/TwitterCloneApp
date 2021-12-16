@@ -14,8 +14,10 @@ class Tweet {
     let likes: Int
     var timestamp: Date?
     let retweetCount: Int
+    let user: User
     
-    init(tweetID: String, dictionary: [String: Any]) {
+    init(user: User, tweetID: String, dictionary: [String: Any]) {
+        self.user = user
         self.tweetID = tweetID
         
         self.caption = dictionary["caption"] as? String ?? ""
@@ -28,13 +30,5 @@ class Tweet {
         }
     }
     
-    func printTweet() {
-        print("DEBUG: TWEET FROM CLASS is \(caption)")
-        print("DEBUG: TWEET FROM CLASS is \(tweetID)")
-        print("DEBUG: TWEET FROM CLASS is \(uid)")
-        print("DEBUG: TWEET FROM CLASS is \(likes)")
-        print("DEBUG: TWEET FROM CLASS is \(timestamp)")
-        print("DEBUG: TWEET FROM CLASS is \(retweetCount)")
-    }
 }
 
