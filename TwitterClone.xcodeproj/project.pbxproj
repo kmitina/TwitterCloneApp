@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F0491A782768AA2300A41D01 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0491A772768AA2300A41D01 /* TweetCell.swift */; };
+		F0491A7A276B651900A41D01 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0491A79276B651900A41D01 /* TweetViewModel.swift */; };
 		F05E50E227676A8C0078A1F1 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */; };
 		F05E50E4276772CC0078A1F1 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E3276772CC0078A1F1 /* TweetService.swift */; };
 		F05E50E62767978C0078A1F1 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05E50E52767978C0078A1F1 /* Tweet.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		F0491A772768AA2300A41D01 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
+		F0491A79276B651900A41D01 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 		F05E50E127676A8C0078A1F1 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionTextView.swift; sourceTree = "<group>"; };
 		F05E50E3276772CC0078A1F1 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		F05E50E52767978C0078A1F1 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 		F072B0CE275652880015C152 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F0491A79276B651900A41D01 /* TweetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				F072B0F7275F89C50015C152 /* Constants.swift in Sources */,
 				F072B0DA275672210015C152 /* ExploreController.swift in Sources */,
 				F072B0DC275672420015C152 /* FeedController.swift in Sources */,
+				F0491A7A276B651900A41D01 /* TweetViewModel.swift in Sources */,
 				F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */,
 				F072B0E72757ED860015C152 /* RegistrationController.swift in Sources */,
 				F072B0D5275653F60015C152 /* MainTabController.swift in Sources */,
