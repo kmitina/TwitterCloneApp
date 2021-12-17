@@ -141,7 +141,7 @@ class TweetCell: UICollectionViewCell {
         captionLabel.text = tweet.caption
         
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
-        infoLabel.attributedText = viewModel.userInfoText
+        infoLabel.attributedText = viewModel.userInfoText 
         
     }
 }
