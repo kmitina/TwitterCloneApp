@@ -128,7 +128,6 @@
 		F072B0CD275652720015C152 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F0491A7B2770CFC300A41D01 /* ProfileController.swift */,
 				F072B0E32757ED140015C152 /* Authentication */,
 				F072B0D4275653F60015C152 /* MainTabController.swift */,
 				F072B0DB275672420015C152 /* FeedController.swift */,
@@ -136,6 +135,7 @@
 				F072B0DD2756725D0015C152 /* NotificationsController.swift */,
 				F072B0DF275672730015C152 /* ConversationsController.swift */,
 				F09C2ABC2762B12B0007FC58 /* UploadTwitController.swift */,
+				F0491A7B2770CFC300A41D01 /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
