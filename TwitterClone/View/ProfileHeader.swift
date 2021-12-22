@@ -84,7 +84,7 @@ class ProfileHeader: UICollectionReusableView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        filterBar.delegate = self 
+        filterBar.delegate = self
         
       addSubview(containerView)
         containerView.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor, height: 108)
