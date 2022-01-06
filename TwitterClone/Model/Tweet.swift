@@ -15,6 +15,7 @@ class Tweet {
     var timestamp: Date?
     let retweetCount: Int
     var user: User
+    var didLike = false
     
     init(user: User, tweetID: String, dictionary: [String: Any]) {
         self.user = user
