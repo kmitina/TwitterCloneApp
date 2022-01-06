@@ -11,7 +11,7 @@ class Tweet {
     let caption: String
     let tweetID: String
     let uid: String
-    let likes: Int
+    var likes: Int
     var timestamp: Date?
     let retweetCount: Int
     var user: User
