@@ -18,7 +18,10 @@ class TweetCell: UICollectionViewCell {
     // MARK: - Properties
     
     var tweet: Tweet? {
-        didSet { configure() }
+        didSet { configure()
+            print("DIDSET \(tweet?.didLike)")
+                
+        }
     }
     
     weak var delegate: TweetCellDelegate?
@@ -124,6 +127,7 @@ class TweetCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    
     // MARK: - Selectors
     
     @objc func handleProfileImageTapped() {
@@ -141,6 +145,8 @@ class TweetCell: UICollectionViewCell {
     
     @objc func handleLikeTapped(){
         delegate?.handleLikeTapped(self)
+        print("DEBUG: TWEET WAS LIKED \(tweet?.didLike)")
+        configure()
     }
     
     @objc func handleShareTapped(){
@@ -159,5 +165,7 @@ class TweetCell: UICollectionViewCell {
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
         infoLabel.attributedText = viewModel.userInfoText 
         
+        likeButton.tintColor = viewModel.likeButtonTintColor
+        likeButton.setImage(viewModel.likeButtonImage, for: .normal)
     }
 }
