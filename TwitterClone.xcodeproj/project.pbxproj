@@ -51,6 +51,7 @@
 		F09C2AB8276222490007FC58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2AB7276222490007FC58 /* User.swift */; };
 		F09C2ABB27624DBE0007FC58 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F09C2ABA27624DBE0007FC58 /* SDWebImage */; };
 		F09C2ABD2762B12B0007FC58 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */; };
+		F0D7E390278CB27300E78303 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E38F278CB27300E78303 /* NotificationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		F09C2AB527621C510007FC58 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		F09C2AB7276222490007FC58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
+		F0D7E38F278CB27300E78303 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 				F05C06D32774C0F600E41B4F /* UserCell.swift */,
 				F05C06D7277C997A00E41B4F /* TweetHeader.swift */,
 				F05C06DD2785BD3E00E41B4F /* ActionSheetCell.swift */,
+				F0D7E38F278CB27300E78303 /* NotificationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				F05C06D8277C997A00E41B4F /* TweetHeader.swift in Sources */,
 				F0491A7A276B651900A41D01 /* TweetViewModel.swift in Sources */,
 				F05C06E02785C5F000E41B4F /* ActionSheetViewModel.swift in Sources */,
+				F0D7E390278CB27300E78303 /* NotificationCell.swift in Sources */,
 				F072B0BC275652030015C152 /* SceneDelegate.swift in Sources */,
 				F072B0E72757ED860015C152 /* RegistrationController.swift in Sources */,
 				F05C06CE27734D0D00E41B4F /* ProfileFilterView.swift in Sources */,
