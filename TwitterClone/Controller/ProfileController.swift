@@ -63,7 +63,7 @@ class ProfileController: UICollectionViewController {
         UserService.shared.fetchUserStats(uid: user.uid) { stats in
             self.user.stats = stats
             self.collectionView.reloadData()
-
+            
         }
     }
     
@@ -134,6 +134,8 @@ extension ProfileController: ProfileHeaderDelegate {
             UserService.shared.followUser(uid: user.uid) { ref, error in
                 self.user.isFollowed = true
                 self.collectionView.reloadData()
+                
+                NotificationService.shared.uploadNotification(type: .follow, user: self.user)
             }
         }
     }
