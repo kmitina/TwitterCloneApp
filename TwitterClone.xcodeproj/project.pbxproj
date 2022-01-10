@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F005C8C8278C5BF000240D0F /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F005C8C7278C5BF000240D0F /* NotificationService.swift */; };
 		F0491A782768AA2300A41D01 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0491A772768AA2300A41D01 /* TweetCell.swift */; };
 		F0491A7A276B651900A41D01 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0491A79276B651900A41D01 /* TweetViewModel.swift */; };
 		F0491A7C2770CFC400A41D01 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0491A7B2770CFC300A41D01 /* ProfileController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F005C8C7278C5BF000240D0F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		F0491A772768AA2300A41D01 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		F0491A79276B651900A41D01 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
 		F0491A7B2770CFC300A41D01 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				F072B0F8275FAA620015C152 /* AuthService.swift */,
 				F09C2AB527621C510007FC58 /* UserService.swift */,
 				F05E50E3276772CC0078A1F1 /* TweetService.swift */,
+				F005C8C7278C5BF000240D0F /* NotificationService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				F09C2AB8276222490007FC58 /* User.swift in Sources */,
 				F072B0F7275F89C50015C152 /* Constants.swift in Sources */,
 				F072B0DA275672210015C152 /* ExploreController.swift in Sources */,
+				F005C8C8278C5BF000240D0F /* NotificationService.swift in Sources */,
 				F072B0DC275672420015C152 /* FeedController.swift in Sources */,
 				F05C06D8277C997A00E41B4F /* TweetHeader.swift in Sources */,
 				F0491A7A276B651900A41D01 /* TweetViewModel.swift in Sources */,
