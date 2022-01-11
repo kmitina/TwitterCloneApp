@@ -52,6 +52,7 @@
 		F09C2ABB27624DBE0007FC58 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F09C2ABA27624DBE0007FC58 /* SDWebImage */; };
 		F09C2ABD2762B12B0007FC58 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */; };
 		F0D7E390278CB27300E78303 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E38F278CB27300E78303 /* NotificationCell.swift */; };
+		F0D7E392278DCD4D00E78303 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E391278DCD4D00E78303 /* NotificationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 		F09C2AB7276222490007FC58 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		F0D7E38F278CB27300E78303 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		F0D7E391278DCD4D00E78303 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +176,7 @@
 				F05C06D1277370F800E41B4F /* ProfileHeaderViewModel.swift */,
 				F05C06D927835DA500E41B4F /* UploadTweetViewModel.swift */,
 				F05C06DF2785C5F000E41B4F /* ActionSheetViewModel.swift */,
+				F0D7E391278DCD4D00E78303 /* NotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
 				F05C06DE2785BD3E00E41B4F /* ActionSheetCell.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
+				F0D7E392278DCD4D00E78303 /* NotificationViewModel.swift in Sources */,
 				F072B0E22757D5890015C152 /* Extensions.swift in Sources */,
 				F05C06D6277C96E400E41B4F /* TweetController.swift in Sources */,
 				F0491A7C2770CFC400A41D01 /* ProfileController.swift in Sources */,
