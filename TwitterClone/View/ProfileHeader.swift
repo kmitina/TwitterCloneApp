@@ -178,7 +178,6 @@ class ProfileHeader: UICollectionReusableView {
         profileImageView.sd_setImage(with: user.profileImageUrl)
         editProfileFollowButton.setTitle(viewModel.actionButtonTitle, for: .normal)
         followingLabel.attributedText = viewModel.followingString
-        followersLabel.attributedText = viewModel.followersString
         fullnameLabel.text = user.fullname
         usernameLabel.text = viewModel.usernameText
     }

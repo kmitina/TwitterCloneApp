@@ -19,8 +19,6 @@ class TweetCell: UICollectionViewCell {
     
     var tweet: Tweet? {
         didSet { configure()
-            print("DIDSET \(tweet?.didLike)")
-                
         }
     }
     
