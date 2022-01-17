@@ -31,21 +31,21 @@ struct TweetService {
         }
     }
     
-        func fetchTweets(completion: @escaping([Tweet]) -> Void) {
-            var tweets = [Tweet]()
-    
-            REF_TWEETS.observe(.childAdded) { snapshot in
-                guard let dictionary = snapshot.value as? [String: Any] else { return }
-                guard let uid = dictionary["uid"] as? String else { return }
-                let tweetID = snapshot.key
-                UserService.shared.fetchUser(uid: uid) { user in
-                    let tweet = Tweet(user: user, tweetID: tweetID, dictionary: dictionary)
-                    tweets.append(tweet)
-                    completion(tweets)
-                }
-    
+    func fetchTweets(completion: @escaping([Tweet]) -> Void) {
+        var tweets = [Tweet]()
+        
+        REF_TWEETS.observe(.childAdded) { snapshot in
+            guard let dictionary = snapshot.value as? [String: Any] else { return }
+            guard let uid = dictionary["uid"] as? String else { return }
+            let tweetID = snapshot.key
+            UserService.shared.fetchUser(uid: uid) { user in
+                let tweet = Tweet(user: user, tweetID: tweetID, dictionary: dictionary)
+                tweets.append(tweet)
+                completion(tweets)
             }
+            
         }
+    }
     
     func fetchTweets(forUser user: User, completion: @escaping([Tweet]) -> Void) {
         var tweets = [Tweet]()
@@ -86,6 +86,20 @@ struct TweetService {
         }
     }
     
+    func fetchLikes(forUser user: User, completion: @escaping([Tweet]) -> Void) {
+        var tweets = [Tweet]()
+        
+        REF_USER_LIKES.child(user.uid).observe(.childAdded) { snapshot in
+            let tweetID = snapshot.key
+            self.fetchTweet(withTweetID: tweetID) { likedTweet in
+                var tweet = likedTweet
+                tweet.didLike = true
+                tweets.append(tweet)
+                completion(tweets)
+            }
+        }
+    }
+    
     func likeTweet(tweet: Tweet, completion: @escaping(DatabaseCompletion)) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
@@ -94,13 +108,13 @@ struct TweetService {
         
         if tweet.didLike {
             // remove like data from firebase
-            REW_USER_LIKES.child(uid).child(tweet.tweetID).removeValue { err, ref in
-                REW_TWEET_LIKES.child(tweet.tweetID).removeValue(completionBlock: completion)
+            REF_USER_LIKES.child(uid).child(tweet.tweetID).removeValue { err, ref in
+                REF_TWEET_LIKES.child(tweet.tweetID).removeValue(completionBlock: completion)
             }
         } else {
             // add like data to firebase
-            REW_USER_LIKES.child(uid).updateChildValues([tweet.tweetID: 1]) { err, ref in
-                REW_TWEET_LIKES.child(tweet.tweetID).updateChildValues([uid: 1], withCompletionBlock: completion)
+            REF_USER_LIKES.child(uid).updateChildValues([tweet.tweetID: 1]) { err, ref in
+                REF_TWEET_LIKES.child(tweet.tweetID).updateChildValues([uid: 1], withCompletionBlock: completion)
             }
         }
     }
@@ -108,7 +122,7 @@ struct TweetService {
     func checkIfUserLikedTweet(_ tweet: Tweet, completion: @escaping(Bool) -> Void) {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         
-        REW_USER_LIKES.child(uid).child(tweet.tweetID).observeSingleEvent(of: .value) { snapshot in
+        REF_USER_LIKES.child(uid).child(tweet.tweetID).observeSingleEvent(of: .value) { snapshot in
             completion(snapshot.exists())
         }
     }
