@@ -53,6 +53,7 @@
 		F09C2ABD2762B12B0007FC58 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */; };
 		F0D7E390278CB27300E78303 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E38F278CB27300E78303 /* NotificationCell.swift */; };
 		F0D7E392278DCD4D00E78303 /* NotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E391278DCD4D00E78303 /* NotificationViewModel.swift */; };
+		F0D7E39427987FE700E78303 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7E39327987FE600E78303 /* EditProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		F0D7E38F278CB27300E78303 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		F0D7E391278DCD4D00E78303 /* NotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewModel.swift; sourceTree = "<group>"; };
+		F0D7E39327987FE600E78303 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				F072B0DF275672730015C152 /* ConversationsController.swift */,
 				F09C2ABC2762B12B0007FC58 /* UploadTweetController.swift */,
 				F0491A7B2770CFC300A41D01 /* ProfileController.swift */,
+				F0D7E39327987FE600E78303 /* EditProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				F072B0E0275672730015C152 /* ConversationsController.swift in Sources */,
 				F05C06D42774C0F600E41B4F /* UserCell.swift in Sources */,
 				F072B0EA275A66490015C152 /* Utilities.swift in Sources */,
+				F0D7E39427987FE700E78303 /* EditProfileController.swift in Sources */,
 				F05C06DE2785BD3E00E41B4F /* ActionSheetCell.swift in Sources */,
 				F072B0BA275652030015C152 /* AppDelegate.swift in Sources */,
 				F0D7E392278DCD4D00E78303 /* NotificationViewModel.swift in Sources */,
