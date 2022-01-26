@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "ActiveLabel",
+        "repositoryURL": "https://github.com/optonaut/ActiveLabel.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "36949c1a69ef8b40574da20c9e24b115f387b1cf",
+          "version": "1.1.5"
+        }
+      },
+      {
         "package": "BoringSSL-GRPC",
         "repositoryURL": "https://github.com/firebase/boringssl-SwiftPM.git",
         "state": {
