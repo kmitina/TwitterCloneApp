@@ -19,6 +19,7 @@ class EditProfileController: UITableViewController {
     
     private var user: User
     private lazy var headerView = EditProfileHeader(user: user)
+    private let footerView = EditProfileFooter()
     private let imagePicker = UIImagePickerController()
     weak var delegate: EditProfileControllerDelegate?
 
@@ -116,13 +117,15 @@ class EditProfileController: UITableViewController {
     func configureTableView() {
         tableView.tableHeaderView = headerView
         headerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 180)
-        tableView.tableFooterView = UIView()
-        
         headerView.delegate = self
-        tableView.register(EditProfileCell.self, forCellReuseIdentifier: reuseIdentifier)
+
+        footerView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 100)
+        tableView.tableFooterView = footerView
+        footerView.delegate = self
         
-        tableView.tableFooterView = captionTextView
-        tableView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 180)
+        tableView.register(EditProfileCell.self, forCellReuseIdentifier: reuseIdentifier)
+//        tableView.tableFooterView = captionTextView
+//        tableView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 180)
     }
     
     func configureImagePicker() {
@@ -200,5 +203,13 @@ extension EditProfileController: EditProfileCellDelegate {
             user.bio = cell.bioTextView.text
         }
 
+    }
+}
+
+// MARK: - EditProfileFooterDelegate
+
+extension EditProfileController: EditProfileFooterDelegate {
+    func handleLogout() {
+        print("DEBUG: Handle logout...")
     }
 }
