@@ -33,10 +33,10 @@ class NotificationsController: UITableViewController {
     }
     
     // MARK: - Selectors
-
+    
     @objc func handleRefresh() {
         fetchNotifications()
-
+        
     }
     
     // MARK: - API
@@ -50,14 +50,17 @@ class NotificationsController: UITableViewController {
     }
     
     func checkIfUserIsFollowed(notifications: [Notification]) {
-        for (index, notification) in notifications.enumerated() {
-            if case .follow = notification.type {
+        guard !notifications.isEmpty else { return }
+        
+        notifications.forEach { notification in
+            guard case .follow = notification.type else { return }
                 let user = notification.user
                 
                 UserService.shared.checkIfUserIsFollowed(uid: user.uid) { isFollowed in
-                    self.notifications[index].user.isFollowed = isFollowed
+                    if let index = self.notifications.firstIndex(where: { $0.user.uid == notification.tweetID }) {
+                        self.notifications[index].user.isFollowed = isFollowed
+                    }
                 }
-            }
         }
     }
     
@@ -90,7 +93,7 @@ extension NotificationsController {
         cell.delegate = self
         return cell
     }
-
+    
 }
 
 
@@ -114,7 +117,7 @@ extension NotificationsController {
 extension NotificationsController: NotificationCellDelegate {
     func didTapFollow(_ cell: NotificationCell) {
         guard let user = cell.notification?.user else { return }
-                
+        
         if user.isFollowed {
             UserService.shared.unfollowUser(uid: user.uid) { err, ref in
                 cell.notification?.user.isFollowed = false
